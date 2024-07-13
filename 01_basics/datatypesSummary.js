@@ -32,4 +32,11 @@ const heros = [ "shaktiman", "naagraj", " ironman"];
 const myFunction = function() {
     console.log("hello world");
 }
-console.log(typeof heros);
+console.log(typeof score);
+
+// typeof
+// myFunction => function
+// heros => object
+// anotherId => symbol
+// outsideStamp => object
+// scoreValue/score => number
