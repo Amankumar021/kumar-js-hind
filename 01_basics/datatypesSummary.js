@@ -39,4 +39,28 @@ console.log(typeof score);
 // heros => object
 // anotherId => symbol
 // outsideStamp => object
-// scoreValue/score => number
+// scoreValue/score => 
+    
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Stack(Primitive), Heap memory (Non-Primitive)
+
+let myYoutubename = "AmankdjDotcom"
+
+let anothername = myYoutubename
+anothername = "punjabdaPuttar"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+let userOne = {
+    email: "user@goggle.com",
+    upi:"user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "amangoggle.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
