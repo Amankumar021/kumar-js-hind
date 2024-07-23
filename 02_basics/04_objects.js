@@ -54,12 +54,47 @@ const users =[
 ]
 
 
-users[1].email
-console.log(tinderUser);
+// users[1].email
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+
+// destructring of objects
+const course ={
+    coursename:"aman ki baat",
+    price:"626",
+    courseInstructor:"Aman"
+}
+
+// course.courseInstructor
+
+const{courseInstructor :  instructure}=course
+
+console.log(instructure);
+
+// const navbar ={company} =>{    // in react.js
+
+// }
+
+// navbar(company="Aman")
+
+
+// {
+//    " name": "Aman",
+//     "coursename" : "aman ki baat",
+//     "price": "free"
+// }
+
+
+[
+    {},
+    {},
+    {},
+    
+]
