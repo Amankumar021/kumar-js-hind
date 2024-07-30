@@ -35,4 +35,40 @@ function loginUserMessage(username = "sam"){
 }
 // console.log(loginUserMessage("Aman"));
 
-console.log(loginUserMessage("Aman"));
+// console.log(loginUserMessage());   // preefined value will asign that is "sam"
+// console.log(loginUserMessage("Aman"));  // given value will assign thst is "Aman"
+
+
+function calculateCartPrice(val1, val2, ...num1){      // (...num1) => spread Operator
+       return num1
+}
+
+// console.log(calculateCartPrice(200,300,500, 642));
+
+
+const user = {
+    username:"Aman",
+    price:209
+}
+
+
+function handleObject(anyobject){
+    console.log(`username is ${anyobject.username} and price is ${anyobject.price}`);
+}
+
+
+// handleObject(user)
+handleObject({
+    username:"sam",
+    price:399
+})
+
+
+const myNewArray = [200, 300, 500] 
+
+function returnSecondValue(getArray){
+    return  getArray[1]
+}
+
+// console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([100,900,800,525]));
