@@ -1,0 +1,43 @@
+*{
+    margin: 0%;
+    
+    
+}
+body{
+    /* display: grid; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+nav{
+    width: 100%;
+    background-color:  #212121;
+    height: 100px;
+}
+.canvas{
+    height: 200px;
+    width: 80%;
+    border: 2px solid gray;
+    text-align: center;
+    margin-top: 100px;
+
+}
+.button{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border: 2px solid gray;
+
+}
+#gray{
+    background-color: gray;
+}
+#blue{
+    background-color: blue;
+}
+#yellow{
+    background-color: yellow;
+}
+#white{
+    background-color: white;
+}
