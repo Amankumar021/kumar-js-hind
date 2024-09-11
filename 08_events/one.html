@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <div class="img">
+        <h2>Amazon image</h2>
+    </div>
+    <ul id="images">
+        <li> <img width="200px" id="photoshop" src="./resorce/01-Apollo-16-Earth-e8af703-e1630404532976.jpg" alt="photoshop"></li>
+        <li> <img width="200px" id="india" src="./resorce/pexels-giorgio-de-angelis-482403-1413412.jpg" alt=""></li>
+        <li> <img width="200px" id="pakistan" src="./resorce/pexels-vladalex94-1402787.jpg" alt=""></li>
+        <li> <img width="200px" id="mumbai" src="./resorce/01-Apollo-16-Earth-e8af703-e1630404532976.jpg" alt=""></li>
+        <li> <img width="200px" id="bangalore" src="./resorce/01-Apollo-16-Earth-e8af703-e1630404532976.jpg" alt=""></li>
+        <li> <img width="200px" id="pune" src="./resorce/01-Apollo-16-Earth-e8af703-e1630404532976.jpg" alt=""></li>
+        <li> <img width="200px" id="goa" src="./resorce/01-Apollo-16-Earth-e8af703-e1630404532976.jpg" alt=""></li>
+        <li> <img width="200px" id="gujrat" src="./resorce/01-Apollo-16-Earth-e8af703-e1630404532976.jpg" alt=""></li>
+        <li> <img width="200px" id="hidustan" src="./resorce/01-Apollo-16-Earth-e8af703-e1630404532976.jpg" alt=""></li>
+        <li> <img width="200px" id="bengal" src="./resorce/01-Apollo-16-Earth-e8af703-e1630404532976.jpg" alt=""></li>
+        <li> <img width="200px" id="gaziabad" src="./resorce/Movie Thor The Dark World Thor Chris Hemsworth HD Wallpaper  Background Image.jpeg" alt=""></li>
+        <li> <img width="200px" id="allahabad" src="./resorce/planets-in-galaxy-4k-ad-1336x768.jpg" alt=""></li>
+        <li> <img width="200px" id="prayagraj" src="./resorce/01-Apollo-16-Earth-e8af703-e1630404532976.jpg" alt=""></li>
+        <li> <img width="200px" id="vanaras" src="./resorce/lamborghini-centauro-rk-1336x768.jpg" alt=""></li>
+        <li> <img width="200px" id="korea" src="./resorce/kratos-the-ghost-of-sparta-dv-1336x768.jpg" alt=""></li>
+        <li> <img width="200px" id="usa" src="./resorce/iron-man-the-hero-gv.jpg" alt=""></li>
+        <li> <img width="200px" id="china" src="./resorce/green_forest_waterfall-wallpaper-1920x1080.jpg" alt=""></li>
+        <li> <img width="200px" id="africa" src="./resorce/ducati-streetfighter-v4-lamborghini-centauro-2024-6l-1336x768.jpg" alt=""></li>
+        <li> <img width="200px" id="afganistan" src="./resorce/dark-4k-bike-with-rider-wfr4p1dnvky3fi61.jpg" alt=""></li>
+        <li> <img width="200px" id="delhi"  src="./resorce/01-Apollo-16-Earth-e8af703-e1630404532976.jpg" alt="" ></li>
+        <li> <img width="200px" id="nepal" src="./resorce/2023-indian-scout-bobber-twenty-custom-zc-1336x768.jpg" alt=""></li>
+        <li><a style="color: aliceblue;" href="https://google.com " id="google">Google</a></li>
+    </ul>
+</body>
+<script>
+    // document.getElementById('delhi').onclick = function (){
+    //     alert ("you reached Delhi")
+    // }
+
+    // another approch // attachEvent()
+    // jQuery - on 
+
+       // type (reading)
+
+    // types => read
+    // timeStamp 
+    // defaultPrevented
+    // target
+    // toElement
+    // srcElement
+    // currentTarget
+    // clientX , clientY, screenX, screenY
+    // altkey , ctrlkey , shiftkey, keycode
+
+    // another method
+
+    // document.getElementById('images').addEventListener('click', function(e){
+    //    console.log("click inside the ul");
+    // }, false  )
+    // document.getElementById('delhi').addEventListener('click', function(e){
+    //    console.log("delhi clicked");
+    //    e.stopPropagation()
+    // }, false )
+
+
+    // document.getElementById('google').addEventListener('click' ,function(e){
+    //     e.preventDefault();
+    //     e.stopPropagation()
+    //     console.log("google clicked");
+       
+    // }, false)
+
+    // removing ul 
+
+        document.querySelector('#images').addEventListener('click', function(e){
+            console.log(e.target.tagName);
+            if (e.target.tagName === 'IMG'){
+                console.log(e.target.id);
+                
+                let removeIt = e.target.parentNode;
+                removeIt.remove()
+
+            }
+            
+
+            // 2nd method
+            // removeIt.parentNode.removeChild(removeIt)
+
+
+        }, false)
+</script>
+</html> 
